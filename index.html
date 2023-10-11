@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <main>
+        <header class="header">
+            <div class=" search_div">
+             <form>
+                <label for="search">
+                  <i class="fa fa-search"></i>
+                  <input type="search" id="search" name="search" placeholder="search">
+                </label>
+             </form>
+            </div> <!--search div-->
+            <div class="add_div">
+               <button class="addNew">
+                <i class="fas fa-user-plus"></i>
+                add new contact
+               </button>
+            </div><!--add div--> 
+        </header>
+       <section class="form">
+         <div class="addNewContact">
+          <i class="fa fa-user-plus"></i>
+          <form action="">
+            <input type="text" placeholder="full name" id="contact_form_name">
+            <input type="text" placeholder="phone" id="contact_form_phone">
+            <input type="email" placeholder="email address" id="contact_form_email">
+            <input type="text" placeholder="home address" id="contact_form_address">
+          </form>
+          <button class="save btn">
+            <i class="fas fa-save"></i> save
+          </button>
+          <div class="close">
+             <i class="far fa-window-close"></i>
+          </div>
+         </div>
+       </section>
+
+         <section class="table-section">
+            <table>
+                <thead>
+                    <th>#id</th>
+                    <th>name</th>
+                    <th>phone</th>
+                    <th>email</th>
+                    <th>address</th>
+                    <th>edit</th>
+                    <th>delete</th>
+                </thead>
+                <tbody id="tbody">
+                     
+                </tbody>
+            </table>
+         </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
